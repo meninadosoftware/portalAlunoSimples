@@ -1,0 +1,42 @@
+<div class="mb-5"></div>
+<div class="card">
+    <div class="card-header">
+        <strong> <i class="fab fa-accusoft mr-2"></i>Meus cursos</strong>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+        <div class="list-group mb-5">
+            <li class="list-group-item cor" >
+                <i class="fas fa-code-branch mr-2"></i>Engenharia de Software
+            </li>
+        </div>
+          </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
+            <button class="btn btn-outline-info mr-2" type="button" (click)="habilitarAulas()"><i class="fas fa-eye mr-2"></i>Visualizar aulas</button>
+          </div>
+          <div *ngIf="visualizar" class="list-group  ">
+            <a  class="list-group-item list-group-item-action active mb-3" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Aula 1</h5>
+                <small>Postada : 3 dias atrás</small>
+              </div>
+              <p class="mb-1">Introdução a engenharia</p>
+              <small> Tema: Entendendo os conceitos iniciais.</small>
+            </a>
+            <a  class="list-group-item list-group-item-action active mb-3" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Aula 2</h5>
+                  <small>Postada : 2 dias atrás </small>
+                </div>
+                <p class="mb-1">Entendo a construção do software</p>
+                <small>Tema: Entendendo requisitos.</small>
+              </a>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
+                <button class="btn btn-outline-danger mr-2" type="button" (click)="fecha()"><i class="fas fa-times mr-2"></i>Fechar aulas</button>
+              </div>
+          </div>
+          
+    </div>
+</div> 
